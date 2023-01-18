@@ -8,7 +8,8 @@ public class TestDataReader {
 private static Properties property;
 	
 	static {
-		try {
+		try { 
+	
 			File file = new File("./src/test/resources/testData/testData.properties");
 			FileInputStream input = new FileInputStream(file);
 			property = new Properties();
