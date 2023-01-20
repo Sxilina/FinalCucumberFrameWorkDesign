@@ -9,9 +9,11 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		  plugin= {"pretty","html:Reports/htmlReport.html","json:Reports/jsonReport.json"},
 		  features="./src/test/resources/features",
-		  glue="step_definitions",
+		  glue="step_defination",
 		  dryRun=false,  
-		  tags="@validLogoutTest"
+		  tags="@LoginPageTest", 
+		  
+		  publish= true
 		  )
 public class TestRunner {
 	
