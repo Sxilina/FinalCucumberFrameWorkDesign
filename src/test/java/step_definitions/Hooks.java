@@ -1,4 +1,4 @@
-package step_defination;
+package step_definitions;
 
 import java.util.concurrent.TimeUnit;
 
