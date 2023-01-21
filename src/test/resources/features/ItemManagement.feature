@@ -1,5 +1,5 @@
 
-@ItemManagement
+@ItemManagement @Regression
 Feature: Item Management
   I want to allow Prime Tech Invoice App users to create items.
 
@@ -18,7 +18,7 @@ Scenario: Add Items UI components
     And User clicks Add Item button
     Then User should see Add Item page components
     
-    @AddItem
+    @AddItem @Smoke
     Scenario Outline: Add Items 
     Given User enters valid credentials
     And clicks on login
@@ -36,7 +36,7 @@ Scenario: Add Items UI components
       | Tennis ball |   500   | pc     | Only to be used for practise|
       | Laptop      |   70000 | pc     | Gaming laptop               |
     
-    @EditItem
+    @EditItem @Smoke
 Scenario: Edit Items
     Given User enters valid credentials
     And clicks on login
@@ -51,7 +51,7 @@ Scenario: Edit Items
     And User should be able to view new added item
     And Added new item should be created in the database
 
- @DeleteItem
+ @DeleteItem @Smoke
 Scenario: Delete Items
     Given User enters valid credentials
     And clicks on login
