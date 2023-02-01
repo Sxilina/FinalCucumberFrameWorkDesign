@@ -5,7 +5,7 @@
     <classes>
       <class name="APILoginLogout.APILoginLogout">
         <methods>
-          <include name="loginsetUp"/>
+          <include name="logoutsetUp"/>
         </methods>
       </class> <!-- APILoginLogout.APILoginLogout -->
     </classes>

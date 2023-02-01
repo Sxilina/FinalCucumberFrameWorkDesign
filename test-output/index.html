@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="APILoginLogout.APILoginLogout" class="method navigator-link" hash-for-method="loginsetUp">loginsetUp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="APILoginLogout.APILoginLogout" class="method navigator-link" hash-for-method="logoutsetUp">logoutsetUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -127,11 +127,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginsetUp">
-                  </a> <!-- loginsetUp -->
-                  <span class="method-name">loginsetUp</span>
+                  <a name="logoutsetUp">
+                  </a> <!-- logoutsetUp -->
+                  <span class="method-name">logoutsetUp</span>
                   <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;422&gt;.
+Expected status code &lt;200&gt; but was &lt;401&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -167,7 +167,7 @@ Expected status code &lt;200&gt; but was &lt;422&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at APILoginLogout.APILoginLogout.loginsetUp(APILoginLogout.java:33)
+	at APILoginLogout.APILoginLogout.logoutsetUp(APILoginLogout.java:59)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -205,7 +205,7 @@ Expected status code &lt;200&gt; but was &lt;422&gt;.
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/gm/n3tgv2554cl8bg_k4ld99h5w0000gn/T/testng-eclipse-2012038552/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/gm/n3tgv2554cl8bg_k4ld99h5w0000gn/T/testng-eclipse-216979608/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -216,7 +216,7 @@ Expected status code &lt;200&gt; but was &lt;422&gt;.
     &lt;classes&gt;
       &lt;class name=&quot;APILoginLogout.APILoginLogout&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;loginsetUp&quot;/&gt;
+          &lt;include name=&quot;logoutsetUp&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- APILoginLogout.APILoginLogout --&gt;
     &lt;/classes&gt;
@@ -260,9 +260,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginsetUp')
+data.setCell(0, 1, 'logoutsetUp')
 data.setCell(0, 2, 'APILoginLogout.APILoginLogout')
-data.setCell(0, 3, 2717);
+data.setCell(0, 3, 2308);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -288,7 +288,7 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">APILoginLogout.APILoginLogout</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">logoutsetUp</span>
+                <span class="ignored-method-name">loginsetUp</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -304,7 +304,7 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loginsetUp</span>
+                <span class="method-name">logoutsetUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

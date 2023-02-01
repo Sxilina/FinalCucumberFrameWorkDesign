@@ -19,6 +19,7 @@ private static Properties property;
 			e.printStackTrace();
 		}
 		
+		
 	}
 	
 	public static String getProperty(String key) {

@@ -8,6 +8,7 @@ import io.restassured.response.Response;
 
 public class APILoginLogout {
 	
+	
 
 	/*
 	 * 	Login
@@ -18,11 +19,11 @@ public class APILoginLogout {
 	 */
 	@Test
 	public static void loginsetUp() {
-		RestAssured.baseURI="http://invoice.primetech-apps.com/login";
+		RestAssured.baseURI="http://invoice.primetech-apps.com/api/v1/auth/login";
 		
 		String requestBody ="{\n"
-				+ "    \"username\": farisnazar45@gmail.com,\n"
-				+ "    \"password\": Test1234,\n"
+				+ "    \"username\": \"farisnazar45@gmail.com\",\n"
+				+ "    \"password\": \"Test1234\",\n"
 				+ "    \"device_name\":\"mobile_app\"\n"
 				+ "}";
 		
@@ -49,7 +50,7 @@ public class APILoginLogout {
 	public static void logoutsetUp() {
 		RestAssured.baseURI="http://invoice.primetech-apps.com/api/v1/auth/logout";
 		
-	    String token = "155|3svY3ITl1qbLWhhuZd54eKkHOyEc5BdpzezDZo9T";
+	    String token = "225|arEsvgDTEdKzmkTWjtlXqAIiarkPlMy8ghw8yOqA";
 		
 		Response myResponse= RestAssured.given().accept(ContentType.JSON)
 				.contentType("application/json").headers("Authorization","Bearer" +token)
